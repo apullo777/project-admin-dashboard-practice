@@ -8,7 +8,6 @@ class Dashboard {
     exercises = {};
 
     constructor() {
-        this.theme = new Theme();
         this.projects = new Projects();
         this.exercises = new Exercises();
 
