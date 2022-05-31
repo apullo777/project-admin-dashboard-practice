@@ -1,3 +1,5 @@
+"use strict";
+
 class Exercises {
 
     exercises = [{
@@ -95,15 +97,15 @@ class Exercises {
     }
 
     create() {
-        const cd = document.getElementById('codewar');
-        const algo = document.getElementById('algorithms');
-        const codewar = document.createElement('article');
-        const algorithms = document.createElement('article');
+        const codewar = document.getElementById('codewar');
+        const algorithms = document.getElementById('algorithms');
+        const cd = document.createElement('article');
+        const algo = document.createElement('article');
         this.exercises.forEach(exercise => {
             if (exercise.type === 'codewar') {
-                codewar.innerHTML += this.template(exercise);
+                cd.innerHTML += this.template(exercise);
             } else {
-                algorithms.innerHTML += this.template(exercise);
+                algo.innerHTML += this.template(exercise);
             }
         });
         codewar.appendChild(cd);

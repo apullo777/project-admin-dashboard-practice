@@ -1,8 +1,9 @@
+"use strict";
+
 import Projects  from './projects.js';
 import Exercises from './exercises.js';
 
 class Dashboard {
-    theme = {};
     projects = {};
     exercises = {};
 
