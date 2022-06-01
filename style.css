@@ -1,0 +1,327 @@
+
+:root {
+    /* Default/Light Colors */
+    --primary-dark: #205359;
+    --secondary-dark: #0f2722;
+    --primary-light: #508485;
+    --secondary-light: #e7eff6;
+    --high-color:    #fffeff;
+    --special-color: #f0c133;
+    --ceiling-color: #ffffff;
+    --medium-color:  #e1e7ef;
+    --low-color:     #0f2722;
+    --floor-color:   #000000;
+
+    --base-transition: none;
+    --fast-transition: none;
+    --base-enabled:    all 0.3s  ease-out;
+    --fast-enabled:    all 0.15s ease-out;
+
+    --nav-shadow:       0.1em 0.1em 0.1em rgba(0,0,0,0.9);
+    --nav-glow:         0 0 0.1em var(--high-color);
+}
+
+* {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    background-color: var(--secondary-light);
+    color: var(--secondary-dark);
+    font-size: 12pt;
+    margin: 0;
+    min-height: 100vh;
+    transition: var(--base-transition);
+    padding: 0;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a, a *,
+button, button * {
+    cursor: pointer;
+    transition: var(--fast-transition);
+}
+
+button:link, button:visited {
+    color: var(--primary-dark);
+    text-decoration: none;
+    text-shadow: 0.05em 0.05em 0.1em var(--floor-color);
+}
+
+button:hover, button:focus, button:active {
+    color: var(--special-color);
+    text-decoration: underline;
+}
+
+svg {
+    filter: drop-shadow(0.1em 0.1em 0.1em rgba(0,0,0,0.5));
+    height: 1.5em;
+    transition: var(--fast-transition);
+    width: 1.5em;
+}
+
+svg path {
+    fill: var(--high-color);
+    transition: var(--base-transition);
+}
+
+
+/* main */
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+main a svg {
+    transition: var(--base-transition);
+}
+
+main div a:hover svg,
+main div a:focus svg,
+main div a:active svg {
+    transform: rotate(360deg) scale(1.5);
+    filter: drop-shadow(0 0 0.3em var(--primary-light));
+}
+
+main a:hover svg path,
+main a:focus svg path,
+main a:active svg path {
+    fill: var(--special-color);
+}
+
+/* Header */
+
+header {
+    position: sticky;
+    transition: var(--base-transition);
+    background-color: var(--high-color);
+    grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-area: 1 / 2 / 2 / -1;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto 1fr;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template: auto 1fr / 2fr 1fr;
+    padding: 0.5rem 2rem;
+}
+
+.welcome {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: auto 1fr;
+        grid-template: 1fr 1fr / auto 1fr;
+    gap: 0.5rem 1rem;
+  }
+
+
+.welcome .user-profile {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+.welcome .hi-para {
+    margin: 0;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    font-weight: bold;
+    font-size: 0.9rem;
+
+  }
+  
+.welcome .main-user-name {
+    margin: 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Content */
+
+.content {
+    display: flex;
+    flex: 1;
+    padding: 1em 2em;
+}
+
+.content h3 {
+    display: block;
+    font-size: 1.1em;
+    margin: 0 0 1em;
+    white-space: nowrap;
+}
+
+.content h4 {
+    font-weight: normal;
+    margin: 0 0 1em;
+}
+
+.content article {
+    background-color: var(--high-color);
+    border-radius: 1em;
+    box-shadow: 0.2em 0.2em 0.2em rgb(0 0 0 / 30%);
+    margin: 0;
+    padding: 1em;
+    transition: var(--base-transition);
+}
+
+.projects {
+    flex: 3;
+}
+
+#projects > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+#projects article {
+    align-items: stretch;
+    box-shadow: inset 0.5em 0 0 var(--special-color), 0.2em 0.2em 0.2em rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.exercises {
+    flex: 1;
+    padding-left: 1em;
+}
+
+.exercises h4 {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.exercises article {
+    padding: 0.5em 1em;
+}
+
+.exercises p {
+    border-bottom: 1px solid #e1e7ef;
+    font-size: 0.7em;
+    margin: 0.3rem 0 0.6rem;
+    padding-bottom: 0.8rem;
+    transition: var(--base-transition);
+}
+
+.exercises #algorithms {
+    margin-top: 1em;
+}
+
+
+/* Side-bar */
+/*
+.sidebar {
+    display: grid;
+    grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / -1 / 2;
+    grid-template-rows: auto auto 1fr;
+    background-color: var(--primary-dark);
+    box-shadow: 0.15em 0 0.15em rgba(0,0,0 / 30%);
+    color: var(--high-color);
+}
+*/
+
+  
+nav {
+    display: grid;
+    background-color: var(--primary-dark);
+    box-shadow: 0.15em 0 0.15em rgba(0,0,0 / 30%);
+    color: var(--high-color);
+}  
+
+.sidebar {
+    min-width: 30%;
+}
+
+
+nav div {
+    color: var(--high-color);
+    cursor: pointer;
+    position: sticky;
+    margin: 0;
+    padding: 0.5em 0 0.5em 0.5em;
+    top: 0;
+    text-shadow: var(--nav-shadow);
+    transition: var(--fast-transition);
+    white-space: nowrap;
+}
+
+
+nav div svg {
+    filter : drop-shadow(var(--nav-shadow));
+    transition: var(--fast-transition);
+    vertical-align: bottom;
+}
+
+nav div:hover {
+    color: var(--high-color);
+    text-shadow: var(--nav-glow);
+}
+
+nav div:hover svg {
+    filter : drop-shadow(var(--nav-glow));
+}
+
+nav div:hover svg path {
+    fill: var(--high-color);
+}
+
+nav a {
+    display: block;
+    padding: 0 0 0.5em 2em;
+    text-shadow: var(--nav-shadow);
+    transition: var(--fast-transition);
+}
+
+
+nav a:link,
+nav a:visited {
+    color: var(--high-color);
+    text-decoration: none;
+    text-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0.9);
+    gap: 1 rem;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: var(--high-color);
+    text-decoration: none;
+    text-shadow: var(--nav-glow);
+    transform: scale(1.1);
+}
