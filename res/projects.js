@@ -50,13 +50,13 @@ class Projects {
 
     template(project) {
         return `
-            <h4><a href="${project.live}"><img src="${project.icon}" alt="Project Icon" loading="lazy">${project.name}</a></h4>
+            <h4><a href="${project.live}">${project.name}</a></h4>
             <img src="${project.img}" alt="Thumbnail Image" loading="lazy">
             <p>${project.desc}</p>
             <div>
                 <a title="Live Version" href="${project.live}">
                     <svg class="icon_view" viewBox="0 0 24 24">
-                        <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" />
+                        <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/>
                     </svg>
                 </a>
                 <a title="GitHub Repository" href="${project.repo}">
