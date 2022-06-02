@@ -7,31 +7,31 @@ class Projects {
         desc: 'An on-screen calculator using JavaScript, HTML, and CSS.',
         live: 'https://apullo777.github.io/calculator/',
         repo: 'https://github.com/apullo777/calculator',
-        img: 'https://github.com/apullo777/calculator/blob/main/preview.png'
+        img: 'https://apullo777.github.io/calculator/preview.png'
     }, {
         name: 'Etch A Sketch',
         desc: 'A sketchpad web app to practise DOM manipulating.',
         live: 'https://apullo777.github.io/etch-a-sketch/',
         repo: 'https://github.com/apullo777/etch-a-sketch',
-        img: 'https://github.com/apullo777/etch-a-sketch/blob/main/preview.png'
+        img: 'https://apullo777.github.io/etch-a-sketch/preview.png'
     }, {
         name: 'Sign-up Form',
         desc: 'A pixel art style sign-up form to practise HTML and CSS.',
         live: 'https://apullo777.github.io/sign-up-form-practice/',
         repo: 'https://github.com/apullo777/sign-up-form-practice',
-        img: 'https://github.com/apullo777/sign-up-form-practice/blob/main/preview.png'
+        img: 'https://apullo777.github.io/sign-up-form-practice/preview.png'
     }, {
         name: 'Rock Paper Scissors',
         desc: 'A rock paper scissors web game using Javascript.',
         live: 'https://apullo777.github.io/rock-paper-scissors/',
         repo: 'https://github.com/apullo777/rock-paper-scissors',
-        img: 'https://github.com/apullo777/rock-paper-scissors/blob/main/preview.png'
+        img: 'https://apullo777.github.io/rock-paper-scissors/preview.png'
     }, {
         name: 'Landing Page',
         desc: 'A mock-up landing page using HTML and CSS.',
         live: 'https://apullo777.github.io/odin-landing-page/',
         repo: 'https://github.com/apullo777/odin-landing-page',
-        img: 'https://github.com/apullo777/odin-landing-page/blob/main/preview.png'
+        img: 'https://apullo777.github.io/odin-landing-page/preview.png'
     }];
 
     constructor() {

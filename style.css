@@ -195,6 +195,8 @@ header {
     transition: var(--base-transition);
 }
 
+/* projects */
+
 .projects {
     flex: 3;
 }
@@ -215,18 +217,38 @@ header {
     justify-content: stretch;
 }
 
+#projects article > img {
+    border-radius: 0.5em;
+    box-shadow: 0.2em 0.2em 0.2em rgb(0 0 0 / 30%);
+    height: auto;
+    margin: 0 auto;
+    max-width: 650px;
+    width: 100%;
+}
+
+#projects article p {
+    flex: 1;
+    transition: var(--base-transition);
+}
+
+#projects article div {
+    text-align: right;
+}
+
+/* exercise */
+
 .exercises {
     flex: 1;
     padding-left: 1em;
 }
 
+.exercises article {
+    padding: 0.5em 1em;
+}
+
 .exercises h4 {
     font-size: 0.9em;
     margin: 0;
-}
-
-.exercises article {
-    padding: 0.5em 1em;
 }
 
 .exercises p {
@@ -258,15 +280,12 @@ header {
 
   
 nav {
-    display: grid;
+    display: block;
     background-color: var(--primary-dark);
     box-shadow: 0.15em 0 0.15em rgba(0,0,0 / 30%);
     color: var(--high-color);
+    padding: 2rem;
 }  
-
-.sidebar {
-    min-width: 30%;
-}
 
 
 nav div {
@@ -301,7 +320,12 @@ nav div:hover svg path {
     fill: var(--high-color);
 }
 
-nav a {
+nav .links {
+    position: sticky;
+    top: 4em;
+}
+
+nav .links a {
     display: block;
     padding: 0 0 0.5em 2em;
     text-shadow: var(--nav-shadow);
@@ -309,8 +333,8 @@ nav a {
 }
 
 
-nav a:link,
-nav a:visited {
+nav .links a:link,
+nav .links a:visited {
     color: var(--high-color);
     text-decoration: none;
     text-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,0.9);
@@ -324,4 +348,26 @@ nav a:active {
     text-decoration: none;
     text-shadow: var(--nav-glow);
     transform: scale(1.1);
+}
+
+nav.collapsed {
+    width: 4em;
+}
+
+nav.collapsed h1 {
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+nav.collapsed .links a {
+    padding: 0 0 2em;
+    text-align: center;
+}
+
+nav.collapsed .links svg {
+    margin: 0 auto;
+}
+
+nav.collapsed span {
+    display: none;
 }
