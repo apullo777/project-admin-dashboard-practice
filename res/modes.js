@@ -11,8 +11,8 @@ class Modes {
 
         this.darkMode  = document.getElementById('dark_mode');
         this.lightMode = document.getElementById('light_mode');
-        this.setStyleProperty('base-transition', this.getStyleValue('base-enabled'));
-        this.setStyleProperty('fast-transition', this.getStyleValue('fast-enabled'));
+        this.setStyleValue('base-transition', this.getStyleValue('base-enabled'));
+        this.setStyleValue('fast-transition', this.getStyleValue('fast-enabled'));
 
         const keys = [
             'dominant-color',
