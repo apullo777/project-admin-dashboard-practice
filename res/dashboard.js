@@ -12,7 +12,7 @@ class Dashboard {
     constructor() {
         this.projects = new Projects();
         this.exercises = new Exercises();
-        this.modes = new Modes ();
+        this.modes = new Modes();
 
     // Search Hints Datalist
     const datalist = document.getElementById('search-hints');
