@@ -10,8 +10,18 @@ class Exercises {
         type: 'codewar'
     }, {
         name: 'String Incremeter',
-        desc: 'writing a function which increments a string, to create a new string',
+        desc: 'Writing a function which increments a string, to create a new string',
         link: 'https://github.com/apullo777/codewars-solutions/blob/main/5kyu/strIncrementer.js',
+        type: 'codewar'
+    }, {
+        name: 'Roman Numeral Helper',
+        desc: 'Create a RomanNumerals class that can convert a roman numeral to and from an integer value.',
+        link: 'https://github.com/apullo777/codewars-solutions/blob/main/4kyu/romanNumeral.js',
+        type: 'codewar'
+    }, {
+        name: 'Remove Odd-indexed Elements ',
+        desc: 'Keep extracting elements from in origianal list at odd positions until all elements are contained in created list.',
+        link: 'https://github.com/apullo777/codewars-solutions/blob/main/removeOddIndexedElements.py',
         type: 'codewar'
     }, {
         name: 'Array Diff',
@@ -55,7 +65,7 @@ class Exercises {
         type: 'codewar'
     }, {
         name: 'Sum Nested Array',
-        desc: 'To sum all elements in a nested array',
+        desc: 'Summing all elements in a nested array',
         link: 'https://github.com/apullo777/codewars-solutions/blob/main/sumNestedArray.js',
         type: 'codewar'
     }, 

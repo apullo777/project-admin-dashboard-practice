@@ -21,6 +21,12 @@ class Projects {
         repo: 'https://github.com/apullo777/sign-up-form-practice',
         img: 'https://apullo777.github.io/sign-up-form-practice/preview.png'
     }, {
+        name: 'Library',
+        desc: 'A small Library app to store books information.',
+        live: 'https://apullo777.github.io/library/',
+        repo: 'https://github.com/apullo777/library',
+        img: 'https://apullo777.github.io/library/preview.png'
+    },{
         name: 'Rock Paper Scissors',
         desc: 'A rock paper scissors web game using Javascript.',
         live: 'https://apullo777.github.io/rock-paper-scissors/',
@@ -33,6 +39,7 @@ class Projects {
         repo: 'https://github.com/apullo777/odin-landing-page',
         img: 'https://apullo777.github.io/odin-landing-page/preview.png'
     }];
+
 
     constructor() {
         this.create();
