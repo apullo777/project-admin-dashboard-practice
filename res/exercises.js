@@ -2,8 +2,33 @@
 
 class Exercises {
 
-    exercises = [{
     // Code War Exercises 
+    exercises = [{
+        name: 'Sum of Intervals',
+        desc: 'Write a function that accepts an array of intervals, and returns the sum of all the interval lengths. Overlapping intervals should only be counted once.',
+        link: 'https://github.com/apullo777/codewars-solutions/blob/main/4kyu/sum-of-intervals.js',
+        type: 'codewar'
+    }, {
+        name: 'Roman Numerals Helper',
+        desc: 'Create a RomanNumerals class that can convert a roman numeral to and from an integer value.',
+        link: 'https://github.com/apullo777/codewars-solutions/blob/main/4kyu/romanNumeral.js',
+        type: 'codewar'
+    }, {
+        name: 'Sudoku Validator',
+        desc: 'Write a function that accepts a 2D array representing a Sudoku board, and returns true if it is a valid solution',
+        link: 'https://github.com/apullo777/codewars-solutions/blob/main/4kyu/sudokuValidator.js',
+        type: 'codewar'
+    }, {
+        name: 'Nested Structure Comparison',
+        desc: 'Writing a function to return true/True when its argument is an array that has the same nesting structures and same corresponding length of nested arrays as the first array.',
+        link: 'https://github.com/apullo777/codewars-solutions/blob/main/4kyu/nested-structure-comparison.py',
+        type: 'codewar'
+    }, {
+        name: 'Strip Comments',
+        desc: 'Complete the solution so that it strips all text that follows any of a set of comment markers passed in.',
+        link: 'https://github.com/apullo777/codewars-solutions/blob/main/4kyu/stripComments.js',
+        type: 'codewar'
+    }, {
         name: 'Simple Pig Latin',
         desc: 'Move the first letter of each word to the end of it, then add "ay" to the end of the word.',
         link: 'https://github.com/apullo777/codewars-solutions/blob/main/5kyu/simplePigLatin.js',
@@ -99,6 +124,11 @@ class Exercises {
         name: 'Binary Search',
         desc: 'Comparing the target value to the middle element of the array.',
         link: 'https://github.com/apullo777/algorithms-practice/blob/main/binarySearch.py',
+        type: 'algorithms'
+    },{
+        name: 'Is Anagram?',
+        desc: 'Checking if an input string is an anagram.',
+        link: 'https://github.com/apullo777/algorithms-practice/blob/main/anagram.py',
         type: 'algorithms'
     }];
 
