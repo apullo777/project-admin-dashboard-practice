@@ -3,6 +3,12 @@
 class Projects {
 
     projects = [{
+        name: 'Tic Tac Toe',
+        desc: 'A simple tic-tac-toe web game built to practise JavaScript factory functions and the module pattern.',
+        live: 'https://apullo777.github.io/tic-tac-toe/',
+        repo: 'https://github.com/apullo777/tic-tac-toe',
+        img: 'https://apullo777.github.io/tic-tac-toe/preview1.png'
+    }, {
         name: 'Caculator',
         desc: 'An on-screen calculator using JavaScript, HTML, and CSS.',
         live: 'https://apullo777.github.io/calculator/',
